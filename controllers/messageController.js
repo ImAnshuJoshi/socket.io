@@ -19,31 +19,6 @@ exports.sendMessageToUser = async (req, res) => {
   try {
     const { message, senderId, receiverId } = req.body;
     const io = req.io;
-    console.log("HI controller:");
-    // console.log(io);
-    // if (io.sockets.listeners("connection").length > 0) {
-    //   console.log("io.sockets.on('connection') is set up");
-    // } else {
-    //   console.log("io.sockets.on('connection') is not set up");
-    // }
-    // io.on("connection", (socket) => {
-    //   console.log("A user connected");
-
-    //   socket.on("send_message", async (data) => {
-    //     try {
-    //       const message = await messageController.sendMessage(data);
-    //       console.log("Message sent successfully using controller");
-    //       console.log(message);
-    //       io.to(data.receiverId).emit("message_sent", message);
-    //     } catch (error) {
-    //       console.error("Error sending message:", error);
-    //     }
-    //   });
-
-    //   socket.on("disconnect", () => {
-    //     console.log("A user disconnected");
-    //   });
-    // });
     const messageObject = {
       message,
       senderId,

@@ -14,7 +14,7 @@ const validatePassword = (password) => {
 exports.register = async (req, res) => {
   try {
     const existingUser = await User.findOne({ email: req.body.email });
-    console.log(req.body);
+    console.log(req.body.image);
     if (!req.body.image) {
       return res.status(400).json({
         status: "fail",
