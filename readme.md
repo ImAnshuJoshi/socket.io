@@ -20,13 +20,12 @@ The server relies on environment variables for configuration. Rename the .env.ex
 The available environment variables are:
 
 ```
-DATABASE_LOCAL: The database connection string.
-PORT: The port on which the server will run.
-JWT: Secret key for JSON Web Token authentication.
-CLOUD_NAME: Name of the cloud provider for media storage (e.g., Cloudinary).
-API_KEY: API key for the cloud provider.
-API_SECRET: API secret for the cloud provider.
-Note: Ensure that you do not commit the .env file to version control, as it may contain sensitive information.
+DATABASE_LOCAL:
+PORT:
+JWT: 
+CLOUD_NAME: 
+API_KEY: 
+API_SECRET:
 ```
 
 Starting the Server
